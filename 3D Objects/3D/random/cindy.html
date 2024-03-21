@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #container {
+        text-align: center;
+
+       }
+       #container h1 {
+        color: #4705ed; 
+       }
+       body {
+        background-color: rgb(145, 28, 255);
+       }
+       #container input {
+        border-radius: 20px;
+        box-shadow: 2px gray 1px white;
+        color: #4705ed;
+       }
+      
+       #container button {
+        padding: 10px;
+        width: 100px;
+        border-radius: 20px;
+        border-color: #4705ed;
+        background-color: aqua;
+        font-size: large;
+        color: #4705ed;
+       }
+    </style>
+</head>
+<body>
+  <div  id="container">
+  <h1>Guess game</h1>
+  <input type="number" id="number" >
+  <br>
+  <br>
+  <button onclick="guess()" id="guessBtn">Click</button>
+  <div id="result"></div>
+
+</div>
+
+
+<script>
+    let number = document.getElementById("number");
+    let result = document.getElementById("result");
+    
+
+    function startGame(){
+
+    result.textContent = ""
+
+    let rand = Math.floor(Math.random() * 10)  ;
+    console.log(rand);
+
+    function guess(){
+      
+        number = parseInt(number.value);
+      if(number == rand){
+        result.textContent = `YOU GUESSED CORRECTLY, THE NUMBER  IS ${rand}` ;
+
+      }
+      else if(number < rand){
+        result.textContent = "YOU NEED TO GUESS HIGHER";
+      }
+      else if (number > rand){
+        result.textContent = "YOU NEED TO GUESS LOWER";
+
+      }
+      }
+      return guess
+    }
+    
+let playGame = startGame(); // Initialize the game
+
+document.getElementById("guessBtn").addEventListener("click", playGame);
+</script>
+</body>
+</html>
