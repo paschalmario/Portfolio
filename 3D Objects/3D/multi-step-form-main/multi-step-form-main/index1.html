@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="font-family" href="assets/fonts/Ubuntu-Bold.ttf">
+<link rel="stylesheet" href="styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="body">
+<div class="Sidebar">
+  <div class="side-bar_links">
+  <input type="button" class="btnlink1"  id="num1" value="1" style="background-color: hsl(206, 94%, 87%); color: hsl(213, 96%, 18%);" onclick="location.href='index1.html'">
+  <label for="">
+    <p>STEP 1</p> <br>
+    YOUR INFO
+  </label>
+</div>
+<div class="side-bar_links">
+  <input type="button" class="btnlink1" value="2" id="num2" onclick="location.href='index2.html'">
+  <label for="">
+    <p>STEP 2</p> <br>
+    SELECT PLAN
+  </label>
+</div>
+<div class="side-bar_links">
+  <input type="button" class="btnlink1" value="3" onclick="location.href='index3.html'">
+  <label for="">
+    <p>STEP 3</p> <br>
+    ADD-ONS
+  </label>
+</div>
+<div class="side-bar_links">
+  <input type="button" class="btnlink1" value="4" onclick="location.href='index4.html'">
+  <label for="">
+    <p>STEP 4</p> <br>
+    SUMMARY
+  </label>
+</div>
+ </div>
+
+
+<div id="container">
+<div class="Your_info">
+  <h1>Personal Info</h1>
+  <p>Please provide your name, email, address, and Phone number.</p><br>
+  <form action="">
+  <div>
+  <label for="name">Name</label>
+  <label for="name" class="required" style="color: hsl(354, 84%, 57%); margin-left: 310px;">This field is required</label>
+</div>
+  <input type="text" class="inp" placeholder="eg. Stephen King" name="name" id="name"><br>
+  <br>
+  <label for="email">Email Address</label>
+  <label for="email" class="required" style="color: hsl(354, 84%, 57%);">This field is required</label>
+  <input type="text" class="inp" placeholder="eg. username@gmail.com" name="email"><br>
+  <br>
+  <label for="Phone">Phone Number</label>
+  <label for="Phone" class="required" style="color: hsl(354, 84%, 57%);">This field is required</label>
+  <input type="text" class="inp" placeholder="eg. +1 234 45 678 " name="Phone">
+  
+  </form>
+  </div> 
+ 
+</div>
+<input type="button" class="btnNext" id="btn" value="Next step" >
+</div>
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>.
+</div>
+<script src="main.js">
+  
+</script>
+</body>
+</html>
