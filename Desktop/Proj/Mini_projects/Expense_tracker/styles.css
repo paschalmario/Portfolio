@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+}
+#note {
+    width: 80%;
+}
+h3 {
+    color: green;
+}
+input {
+    width: 30%;
+}
+button {
+    color: white;
+    background-color: green;
+}
+table {
+    border: 1px solid black;
+    margin-left: 20%;
+}
+th {
+    width: 200px;
+}
+td, th {
+    border: 1px solid gray;
+}

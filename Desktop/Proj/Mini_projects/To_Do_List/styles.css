@@ -1,0 +1,8 @@
+body {
+    text-align: center;
+}
+.man {
+   border: 2px solid black; 
+   border-radius: 200px;
+   padding: 20px;
+}
